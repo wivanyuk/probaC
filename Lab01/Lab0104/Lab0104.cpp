@@ -6,6 +6,7 @@
 int main()
 {
     std::cout << "Hello World!\n";
+    std::cout << "Lab0104!\n";
     int a;
     std::cin >> a;
     int b;
