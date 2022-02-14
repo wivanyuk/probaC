@@ -10,7 +10,7 @@ int main()
     std::cin >> a;
     int b;
     std::cin >> b;
-    std::cout a + b;
+    std::cout << a + b;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
