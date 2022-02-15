@@ -7,6 +7,17 @@ int main()
 {
     std::cout << "Hello World!\n";
     std::cout << "Lab 0101!\n";
+    double a, b, c;
+    std::cout << "a=";
+    std::cin >> a;
+    std::cout << "b=";
+    std::cin >> b;
+    std::cout << "c=";
+    std::cin >> c;
+    double rezult;
+    rezult = sqrt(a*b+b*c+a*c);
+    std::cout << "Rezultat= " << rezult;
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
