@@ -1,13 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Lab01",
     "\\Lab01\\Lab0101",
     "\\Lab01\\Lab0102",
     "\\Lab01\\Lab0103",
     "\\Lab01\\Lab0104",
-    "\\Lab01\\Lab0105"
+    "\\Lab01\\Lab0105",
+    "\\Lab02",
+    "\\Lab02\\Lab0202"
   ],
-  "SelectedNode": "\\Lab01\\Lab0105\\Lab0105.cpp",
+  "SelectedNode": "\\Lab02\\Lab0202\\Lab0202.cpp",
   "PreviewInSolutionExplorer": false
 }
