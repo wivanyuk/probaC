@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-
+long factorial(int number);
 int main()
 {
     setlocale(LC_CTYPE, "ukr");
@@ -75,7 +75,7 @@ int main()
     //std::cout << "min = " << min;
 
     // підрахунок чисел -1, 0, 1
-    int n = 0, z = 0, p = 0, q = 0;
+ /*   int n = 0, z = 0, p = 0, q = 0;
     int a;
     for (int i = 0; i < 10; i++)
     {
@@ -91,7 +91,86 @@ int main()
     std::cout << "к-ть -1 = " << n;
     std::cout << "к-ть 0 = " << z;
     std::cout << "к-ть 1 = " << p;
-    std::cout << "к-ть інших = " << q;
+    std::cout << "к-ть інших = " << q;*/
+
+    // Цикли. Виведення на екран всіх парних чисел від 500 до 0
+  /*  long i;
+    for (i = 500; i >= 0; printf("\n%ld", i), i -= 2);*/
+    
+    //for (int i = 98; i >= 10; i -= 2)
+    //{
+    //    printf("\nПарне число:");
+    //  //  continue;
+    //    printf("%ld", i);        
+    //}
+    //for (int i = 98; i >= 10; i--)
+    //    if (i % 2 == 1)
+    //        continue;
+    //    else
+    //        printf("\n %ld", i);
+
+    // Піраміда
+    //#define RМАХ 10 /* висота піраміди */
+    //int row, left, right, pos;
+    //for (row = 1, left = right = RМАХ; row <= RМАХ; left--, right++, row++) {
+    //    for (pos = 1; pos < left; pos++)
+    //        putchar(' ');
+    //    for (; pos <= right; pos++)
+    //        putchar((char)'A' + row - 1);
+    //    putchar('\n');
+    //}
+    
+    // Табличка Піфагора
+    //for (int i = 1; i <= 10; i++)
+    //{
+    //    for (int j = 1; j <= 10; j++)
+    //        std::cout << i * j << "   ";
+    //    std::cout << std::endl;
+    //}
+
+    // Опитування
+
+    //char ch;
+    //printf("Підтверджуєте, що будете відвудувати всі пари? Так чи ні ?(y/n); ");
+    //std::cin >> ch;
+    //while ((ch != 'y'))
+    //{
+    //    std::cout << "Відповідайте так чи ні . . (y / n)";
+    //    std::cin >> ch;
+    //}
+    //std::cout << "Молодець";
+
+// Опитування2
+
+    char ch;
+    printf("Підтверджуєте, що будете відвудувати всі пари? ");
+   
+    
+    do
+    {
+        std::cout << "Відповідайте так чи ні . . (y / n)";
+        std::cin >> ch;
+    }
+    while ((ch != 'y'));
+    return 0;
+    std::cout << "Молодець";
+
+    // Факторіал
+    /*int number;
+    std::cout << "Введіть число: ";
+    std::cin >> number;
+
+    long R = factorial(number);
+    std::cout << number << "!=" << R;*/
+}
+
+//5 != 5 * 4 * 3 * 2 * 1
+long factorial(int number) {
+    long total;
+    total = number;
+    while (--number)
+        total *= number;
+    return total;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
