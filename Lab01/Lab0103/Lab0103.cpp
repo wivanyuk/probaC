@@ -2,11 +2,33 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::cout << "Lab0103!\n";
+	int a;
+	double b = 1/2;
+	cout << "b is " << b << endl;
+	b = 1. / 2;
+	cout << "b is " << b << endl;
+	cout << "Enter a \n";
+	cin >> a;
+	//змінна а має містити натуральне число:
+	if (a > 0) {
+		double h = 0, S = 0, R = 0, r = 0; //введення змінних
+		h = sqrt(pow(a, 2) - (pow(1. / 2 * a, 2)));//формула висоти в рівностороньому трикутнику
+		S = ((1. / 2) * a * h);//формула площі рівносторонього трикутника
+		R = a / sqrt(3);//радіус описаного кола
+		r = a / (2 * sqrt(3));//радіус вписаного кола
+		//виведення даних:
+		cout << "S is " << S << endl;
+		cout << "R is " << R << endl;
+		cout << "r is " << r << endl;
+		cout << "h is " << h << endl;
+	}
+	else {
+		cout << "Error\n";
+	}
+	return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
